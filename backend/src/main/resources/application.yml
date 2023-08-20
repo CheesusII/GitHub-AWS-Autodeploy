@@ -1,0 +1,20 @@
+spring:
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/webchat
+    username: postgres
+    password: password
+
+  jpa:
+    show-sql: true  # Log each SQL query
+    hibernate:
+      ddl-auto: update  # DDL auto (schema change strategy)
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
+  # testing purposes
+  web:
+    resources:
+      static-locations: classpath:/static/
